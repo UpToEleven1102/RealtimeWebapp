@@ -6,7 +6,7 @@ class ChannelList extends React.Component {
     render() {
         return (
             <ul>
-                {this.props.channels.map(chan => <Channel channel={chan} setChannel={this.props.setChannel}/>)}
+                {this.props.channels.map(chan => <Channel key={chan.id} channel={chan} setChannel={this.props.setChannel}/>)}
             </ul>
         )
     }

@@ -7,7 +7,7 @@ class UserList extends React.Component {
     render() {
         return (
             <ul>
-                {this.props.users.map(user => <li><User user={user}/></li>)}
+                {this.props.users.map(user => <li key={user.id}><User user={user}/></li>)}
             </ul>
         )
     }

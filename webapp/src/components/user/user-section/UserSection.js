@@ -10,7 +10,7 @@ class UserSection extends React.Component {
         return (
             <div>
                 <UserList users={this.props.users}/>
-                <UserForm setUser={this.props.setUser} />
+                <UserForm channel={this.props.channel} setUser={this.props.setUser} />
             </div>
         )
     }
